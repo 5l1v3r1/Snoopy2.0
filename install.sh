@@ -113,7 +113,7 @@ if [ "$?" -ne 0 ]; then echo "[!] Failed :("; exit 1; fi
 if [ "$xplico" == "yes" ]; then
 	apt-get install -y xplico 
 fi
-pip install lxml beautifulsoup requests PIL mitmproxy ipaddr publicsuffix twisted cryptacular Flask_SQLAlchemy
+sudo pip install lxml beautifulsoup requests PIL mitmproxy ipaddr publicsuffix twisted http://pypi.python.org/packages/source/c/cryptacular/cryptacular-1.3.tar.gz Flask_SQLAlchemy
 if [ "$?" -ne 0 ]; then echo "[!] Failed :("; exit 1; fi
 
 echo "[+] Done installing packages. Onward and upward!"
